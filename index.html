@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="hu">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta name="author" content="Szalontai Jordán" />
+
+<!---
+    <link rel="icon" href="res/minilogo.png">
+-->
+    <title>CV | Szalontai Jordán</title>
+
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet">
+
+    <!-- 
+      temporary stylesheet
+    -->
+
+    <style type="text/css">
+      body * {
+        border: thin solid red;
+        border-collapse: collapse;
+      }
+
+      .container > div.row div.row > div {
+        border: medium solid blue;
+      }
+    </style>
+
+  </head>
+
+  <body data-spy="scroll" data-target=".navbar" data-offset="60">
+    
+    <div class="container">
+      <div class="row">
+
+        <div class="col-sm-8">
+          <div class="row">
+            <div class="education">
+              <h1>Iskoláim</h1>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="interests">
+              <h1>Érdeklődési köröm</h1>
+            </div>
+          </div>
+          
+          <div class="row">
+            <div class="things-i-do">
+              <h1>Dolgok, melyeket csinálok</h1>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-4 general-info">
+          <!--face-->
+          <div class="row">
+            <div class="col-sm-12">
+              <img src="res/jordan.jpg" alt="Jordán" class="cv-img img-responsive" />
+              <span class="img-support-text">Szalontai Jordán</span>
+              <span class="img-subtitle">Debreceni Egyetem</span>
+            </div>
+
+            <div class="info col-sm-12">
+              Szalontai Jordán vagyok, lorem ipsum dolor sit amet...
+            </div>
+
+            <div class="mobile col-sm-12">
+              <span>
+                +36 30 338 1166
+              </span>
+            </div>  
+
+            <div class="email col-sm-12">
+              <span>
+              jordanlt1111@gmail.com
+              </span>
+            </div>  
+
+            <div class="address col-sm-12">
+              <span>
+                Állandó lakcím:<br>
+                4400 Nyíregyháza, Petőfi utca 4.
+              </span>
+            </div> 
+
+            <div class="skills col-sm-12">
+              <div class="skill-html"></div>
+              <div class="skill-css"></div>
+              <div class="skill-js"></div>
+              <div class="skill-jquery"></div>
+              <div class="skill-sass"></div>
+              <div class="skill-less"></div>
+              <div class="skill-java"></div>
+              <div class="skill-learning"></div>
+              <div class="skill-time"></div>
+            </div> 
+          </div>     
+        </div>
+      </div>
+    </div>
+
+    <!-- JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>  
+    <script src="js/main.js"></script>  
+
+    <script>
+      $(document).ready(function(){
+        $(".navbar a, footer a[href='#top']").on('click', function(event) {
+
+          if (this.hash !== "") {
+            event.preventDefault();
+
+            var hash = this.hash;
+
+            $('html, body').animate({scrollTop: $(hash).offset().top - 32}, 900, function() {
+              window.location.hash = hash;
+            });
+          }
+        });
+
+        $(window).scroll(function() {
+          $(".slideanim").each(function(){
+            var pos = $(this).offset().top;
+
+            var winTop = $(window).scrollTop();
+            if (pos < winTop + 600) {
+              $(this).addClass("slide");
+            }
+          });
+        });
+      })
+    </script>
+
+  </body>
+</html>
+
