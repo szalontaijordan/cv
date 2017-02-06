@@ -2,6 +2,8 @@ body {
 	font-family: Roboto;
 	background-color: $divider-color;
 	text-color: $primary-text-color;
+	border-collapse: separate;
+	padding-top: 128px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -17,7 +19,8 @@ p, span {
 }
 
 section {
-	margin-bottom: 32px;
+	z-index: 20;
+	margin-bottom: 16px;
 }
 
 .z-1 {

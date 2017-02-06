@@ -7,51 +7,54 @@ body {
   font-family: Roboto;
   background-color: #bdbdbd;
   text-color: #212121;
+  border-collapse: separate;
+  padding-top: 128px;
 }
 
-/* line 7, ../scss/base/_normalize.scss */
+/* line 9, ../scss/base/_normalize.scss */
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
 }
 
-/* line 11, ../scss/base/_normalize.scss */
+/* line 13, ../scss/base/_normalize.scss */
 h1 {
   font-weight: 100;
 }
 
-/* line 15, ../scss/base/_normalize.scss */
+/* line 17, ../scss/base/_normalize.scss */
 p, span {
   font-weight: 300;
 }
 
-/* line 19, ../scss/base/_normalize.scss */
+/* line 21, ../scss/base/_normalize.scss */
 section {
-  margin-bottom: 32px;
+  z-index: 20;
+  margin-bottom: 16px;
 }
 
-/* line 23, ../scss/base/_normalize.scss */
+/* line 26, ../scss/base/_normalize.scss */
 .z-1 {
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
 }
 
-/* line 27, ../scss/base/_normalize.scss */
+/* line 30, ../scss/base/_normalize.scss */
 .z-2 {
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
 }
 
-/* line 31, ../scss/base/_normalize.scss */
+/* line 34, ../scss/base/_normalize.scss */
 .z-3 {
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19);
 }
 
-/* line 35, ../scss/base/_normalize.scss */
+/* line 38, ../scss/base/_normalize.scss */
 .z-4 {
-  box-shadow: 0 14px 28px rgba(0, 0, 0, 0);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25);
 }
 
-/* line 39, ../scss/base/_normalize.scss */
+/* line 42, ../scss/base/_normalize.scss */
 .z-5 {
-  box-shadow: 0 19px 38px rgba(0, 0, 0, 0);
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3);
 }
 
 /*------COMPONENTS-------*/
@@ -62,74 +65,156 @@ section {
   z-index: 10;
   padding: 0;
 }
-/* line 12, ../scss/components/_contact.scss */
+/* line 8, ../scss/components/_contact.scss */
 #contact .col-sm-12 span.img-support-text, #contact .col-sm-12 span.img-subtitle {
   position: absolute;
   color: white;
   text-shadow: 1px 0px 2px rgba(0, 0, 0, 0);
 }
-/* line 18, ../scss/components/_contact.scss */
+/* line 14, ../scss/components/_contact.scss */
 #contact .col-sm-12 span.img-support-text {
   bottom: 48px;
   left: 100px;
   font-size: 2em;
 }
-/* line 25, ../scss/components/_contact.scss */
+/* line 21, ../scss/components/_contact.scss */
 #contact .col-sm-12 span.img-subtitle {
   bottom: 32px;
   left: 100px;
   font-size: 0.8em;
 }
-/* line 33, ../scss/components/_contact.scss */
+/* line 29, ../scss/components/_contact.scss */
 #contact div.info {
   background-color: #009688;
   color: white;
 }
-/* line 37, ../scss/components/_contact.scss */
+/* line 33, ../scss/components/_contact.scss */
 #contact div.info div.row {
   padding-top: 16px;
   padding-left: 0;
   padding-right: 0;
 }
-/* line 43, ../scss/components/_contact.scss */
+/* line 39, ../scss/components/_contact.scss */
 #contact div.info div[class|="col"] {
   position: relative;
   padding: 0;
-  min-height: 100px;
+  min-height: 80px;
   text-align: left;
   vertical-align: middle;
 }
-/* line 51, ../scss/components/_contact.scss */
+/* line 47, ../scss/components/_contact.scss */
 #contact div.info div.col-sm-9 {
   border-bottom: thin solid #bdbdbd;
 }
-/* line 55, ../scss/components/_contact.scss */
+/* line 51, ../scss/components/_contact.scss */
 #contact div.info div.col-sm-3 {
   text-align: center;
 }
-/* line 59, ../scss/components/_contact.scss */
+/* line 55, ../scss/components/_contact.scss */
 #contact div.info span {
   position: absolute;
   top: 50%;
   transform: translate(0, -50%);
 }
-/* line 65, ../scss/components/_contact.scss */
+/* line 61, ../scss/components/_contact.scss */
 #contact div.info span.bio {
   font-size: 1em;
 }
-/* line 69, ../scss/components/_contact.scss */
+/* line 65, ../scss/components/_contact.scss */
 #contact div.info span.big {
-  font-size: 1.5em;
+  font-size: 1.2em;
 }
-/* line 73, ../scss/components/_contact.scss */
+/* line 69, ../scss/components/_contact.scss */
 #contact div.info span.big-sub {
   transform: translate(0, 50%);
   font-size: 1em;
 }
-/* line 78, ../scss/components/_contact.scss */
+/* line 74, ../scss/components/_contact.scss */
 #contact div.info span.icon {
   transform: translate(0, -25%);
 }
+/* line 78, ../scss/components/_contact.scss */
+#contact div.info:last-child {
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
 
 /*   skills    */
+/* line 3, ../scss/components/_skills.scss */
+#skills ul {
+  list-style-type: none;
+}
+/* line 6, ../scss/components/_skills.scss */
+#skills ul li {
+  margin-left: 24px;
+}
+/* line 8, ../scss/components/_skills.scss */
+#skills ul li::after {
+  content: ' ';
+  display: block;
+  height: 2px;
+  border: thin solid black;
+  margin: 16px 0 32px 0;
+}
+/* line 17, ../scss/components/_skills.scss */
+#skills ul li.skill-web-html::before {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  left: 0;
+}
+/* line 25, ../scss/components/_skills.scss */
+#skills h1 {
+  position: absolute;
+  left: 50px;
+  bottom: 100px;
+  color: white;
+  font-weight: 300;
+}
+/* line 33, ../scss/components/_skills.scss */
+#skills p {
+  position: absolute;
+  left: 50px;
+  bottom: 78px;
+  color: #bdbdbd;
+  font-weight: 300;
+  font-size: 1.2em;
+}
+/* line 42, ../scss/components/_skills.scss */
+#skills h2 {
+  color: #757575;
+  font-size: 1.2em;
+  font-weight: 300;
+  margin: 16px 0;
+}
+/* line 51, ../scss/components/_skills.scss */
+#skills span.three-dots::after {
+  content: '\22EE';
+  color: white;
+  font-weight: 300;
+  font-size: 1.8em;
+  position: absolute;
+  right: 16px;
+  top: 16px;
+}
+/* line 61, ../scss/components/_skills.scss */
+#skills span.three-dots:hover {
+  cursor: pointer;
+}
+/* line 66, ../scss/components/_skills.scss */
+#skills div.card-header {
+  position: relative;
+  background-color: #009688;
+  height: 240px;
+  padding-bottom: 25%;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+/* line 75, ../scss/components/_skills.scss */
+#skills div.card-content {
+  background-color: white;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
 /*   entry      */
