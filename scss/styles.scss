@@ -7,14 +7,8 @@
 /* normalize */
 @import 'base/_normalize.scss';
 
-/*--------LAYOUT---------*/
-/* header */
-@import 'layout/_header.scss';
-
-/* nav */
-@import 'layout/_nav.scss';
-
-/* footer */
-@import 'layout/_footer.scss';
-
 /*------COMPONENTS-------*/
+/*   contact    */
+@import 'components/_contact.scss';
+/*   entry      */
+@import 'components/_entry.scss';
