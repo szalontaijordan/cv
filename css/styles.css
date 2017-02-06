@@ -2,6 +2,134 @@
 /*------ROBOTO FONT------*/
 /*---------BASE----------*/
 /* normalize */
+/* line 1, ../scss/base/_normalize.scss */
+body {
+  font-family: Roboto;
+  background-color: #bdbdbd;
+  text-color: #212121;
+}
+
+/* line 7, ../scss/base/_normalize.scss */
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+}
+
+/* line 11, ../scss/base/_normalize.scss */
+h1 {
+  font-weight: 100;
+}
+
+/* line 15, ../scss/base/_normalize.scss */
+p, span {
+  font-weight: 300;
+}
+
+/* line 19, ../scss/base/_normalize.scss */
+section {
+  margin-bottom: 32px;
+}
+
+/* line 23, ../scss/base/_normalize.scss */
+.z-1 {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0);
+}
+
+/* line 27, ../scss/base/_normalize.scss */
+.z-2 {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0);
+}
+
+/* line 31, ../scss/base/_normalize.scss */
+.z-3 {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0);
+}
+
+/* line 35, ../scss/base/_normalize.scss */
+.z-4 {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0);
+}
+
+/* line 39, ../scss/base/_normalize.scss */
+.z-5 {
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0);
+}
+
 /*------COMPONENTS-------*/
 /*   contact    */
+/* line 3, ../scss/components/_contact.scss */
+#contact .col-sm-12 {
+  position: relative;
+  z-index: 10;
+  padding: 0;
+}
+/* line 12, ../scss/components/_contact.scss */
+#contact .col-sm-12 span.img-support-text, #contact .col-sm-12 span.img-subtitle {
+  position: absolute;
+  color: white;
+  text-shadow: 1px 0px 2px rgba(0, 0, 0, 0);
+}
+/* line 18, ../scss/components/_contact.scss */
+#contact .col-sm-12 span.img-support-text {
+  bottom: 48px;
+  left: 100px;
+  font-size: 2em;
+}
+/* line 25, ../scss/components/_contact.scss */
+#contact .col-sm-12 span.img-subtitle {
+  bottom: 32px;
+  left: 100px;
+  font-size: 0.8em;
+}
+/* line 33, ../scss/components/_contact.scss */
+#contact div.info {
+  background-color: #009688;
+  color: white;
+}
+/* line 37, ../scss/components/_contact.scss */
+#contact div.info div.row {
+  padding-top: 16px;
+  padding-left: 0;
+  padding-right: 0;
+}
+/* line 43, ../scss/components/_contact.scss */
+#contact div.info div[class|="col"] {
+  position: relative;
+  padding: 0;
+  min-height: 100px;
+  text-align: left;
+  vertical-align: middle;
+}
+/* line 51, ../scss/components/_contact.scss */
+#contact div.info div.col-sm-9 {
+  border-bottom: thin solid #bdbdbd;
+}
+/* line 55, ../scss/components/_contact.scss */
+#contact div.info div.col-sm-3 {
+  text-align: center;
+}
+/* line 59, ../scss/components/_contact.scss */
+#contact div.info span {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+/* line 65, ../scss/components/_contact.scss */
+#contact div.info span.bio {
+  font-size: 1em;
+}
+/* line 69, ../scss/components/_contact.scss */
+#contact div.info span.big {
+  font-size: 1.5em;
+}
+/* line 73, ../scss/components/_contact.scss */
+#contact div.info span.big-sub {
+  transform: translate(0, 50%);
+  font-size: 1em;
+}
+/* line 78, ../scss/components/_contact.scss */
+#contact div.info span.icon {
+  transform: translate(0, -25%);
+}
+
+/*   skills    */
 /*   entry      */
