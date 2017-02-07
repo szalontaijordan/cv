@@ -1,0 +1,50 @@
+.entry {
+	border-radius: 4px;
+	background-color: $primary-color-text;
+	height: 512px;
+
+	ul {
+		list-style-type: none;
+
+		li.school {
+			margin: 32px;
+
+			&:first-child::after {
+				content: ' ';
+				display: block;
+				width: 100%;
+				height: 16px;
+				border-bottom: thin solid $divider-color;
+			}
+
+			span.spec {
+				font-size: 1.5em;
+				font-weight: 700;
+				display: inline-block;
+			}
+
+			span.name {
+				font-weight: 500;
+				color: $secondary-text-color;
+			}
+
+			span.time {
+				display: block;
+				font-size: 1.2em;
+				font-weight: 700;
+				color: $primary-color-dark;
+			}
+
+			p {
+				margin-top: 8px;
+			}
+		}
+
+	}
+
+	h1 {
+		margin: 32px 0 32px 64px;
+		font-weight: 500;
+		color: $primary-color-dark;
+	}
+}

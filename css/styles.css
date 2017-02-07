@@ -8,7 +8,7 @@ body {
   background-color: #bdbdbd;
   color: #212121;
   border-collapse: separate;
-  padding-top: 128px;
+  padding-top: 16px;
 }
 
 /* line 9, ../scss/base/_normalize.scss */
@@ -33,26 +33,32 @@ section {
 }
 
 /* line 26, ../scss/base/_normalize.scss */
+.general-info {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* line 31, ../scss/base/_normalize.scss */
 .z-1 {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0);
 }
 
-/* line 30, ../scss/base/_normalize.scss */
+/* line 35, ../scss/base/_normalize.scss */
 .z-2 {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0);
 }
 
-/* line 34, ../scss/base/_normalize.scss */
+/* line 39, ../scss/base/_normalize.scss */
 .z-3 {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0);
 }
 
-/* line 38, ../scss/base/_normalize.scss */
+/* line 43, ../scss/base/_normalize.scss */
 .z-4 {
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0);
 }
 
-/* line 42, ../scss/base/_normalize.scss */
+/* line 47, ../scss/base/_normalize.scss */
 .z-5 {
   box-shadow: 0 19px 38px rgba(0, 0, 0, 0);
 }
@@ -64,79 +70,66 @@ section {
   position: relative;
   z-index: 10;
   padding: 0;
+  min-height: 80px;
+  background-color: #009688;
+  color: white;
 }
-/* line 8, ../scss/components/_contact.scss */
+/* line 11, ../scss/components/_contact.scss */
 #contact .col-sm-12 span.img-support-text, #contact .col-sm-12 span.img-subtitle {
   position: absolute;
   color: white;
-  text-shadow: 1px 0px 2px rgba(0, 0, 0, 0);
+  text-shadow: 1px 0px 2px rgba(0, 0, 0, 0.5);
 }
-/* line 14, ../scss/components/_contact.scss */
+/* line 17, ../scss/components/_contact.scss */
+#contact .col-sm-12 span {
+  position: absolute;
+}
+/* line 21, ../scss/components/_contact.scss */
 #contact .col-sm-12 span.img-support-text {
   bottom: 48px;
   left: 100px;
   font-size: 2em;
 }
-/* line 21, ../scss/components/_contact.scss */
+/* line 28, ../scss/components/_contact.scss */
 #contact .col-sm-12 span.img-subtitle {
   bottom: 32px;
   left: 100px;
   font-size: 0.8em;
 }
-/* line 29, ../scss/components/_contact.scss */
-#contact div.info {
-  background-color: #009688;
-  color: white;
-}
-/* line 33, ../scss/components/_contact.scss */
-#contact div.info div.row {
-  padding-top: 16px;
-  padding-left: 0;
-  padding-right: 0;
-}
-/* line 39, ../scss/components/_contact.scss */
-#contact div.info div[class|="col"] {
-  position: relative;
-  padding: 0;
-  min-height: 80px;
-  text-align: left;
-  vertical-align: middle;
-}
-/* line 47, ../scss/components/_contact.scss */
-#contact div.info div.col-sm-9 {
-  border-bottom: thin solid #bdbdbd;
-}
-/* line 51, ../scss/components/_contact.scss */
-#contact div.info div.col-sm-3 {
-  text-align: center;
-}
-/* line 55, ../scss/components/_contact.scss */
-#contact div.info span {
-  position: absolute;
+/* line 34, ../scss/components/_contact.scss */
+#contact .col-sm-12 span.bio, #contact .col-sm-12 span.big-sub, #contact .col-sm-12 span.big {
+  left: 72px;
   top: 50%;
   transform: translate(0, -50%);
 }
-/* line 61, ../scss/components/_contact.scss */
-#contact div.info span.bio {
+/* line 40, ../scss/components/_contact.scss */
+#contact .col-sm-12 span.big-sub {
   font-size: 1em;
+  transform: translate(0, 50%);
 }
-/* line 65, ../scss/components/_contact.scss */
-#contact div.info span.big {
+/* line 45, ../scss/components/_contact.scss */
+#contact .col-sm-12 span.big {
   font-size: 1.2em;
 }
-/* line 69, ../scss/components/_contact.scss */
-#contact div.info span.big-sub {
-  transform: translate(0, 50%);
-  font-size: 1em;
+/* line 49, ../scss/components/_contact.scss */
+#contact .col-sm-12 span.icon {
+  left: 24px;
+  top: 50%;
+  transform: translate(0, -50%);
 }
-/* line 74, ../scss/components/_contact.scss */
-#contact div.info span.icon {
-  transform: translate(0, -25%);
-}
-/* line 78, ../scss/components/_contact.scss */
-#contact div.info:last-child {
+/* line 55, ../scss/components/_contact.scss */
+#contact .col-sm-12:last-child {
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
+}
+/* line 60, ../scss/components/_contact.scss */
+#contact .col-sm-12 .info-divider {
+  position: absolute;
+  top: 0;
+  left: 18%;
+  height: 80px;
+  width: 82%;
+  border-bottom: thin solid #bdbdbd;
 }
 
 /*   skills    */
@@ -283,3 +276,53 @@ section {
 }
 
 /*   entry      */
+/* line 1, ../scss/components/_entry.scss */
+.entry {
+  border-radius: 4px;
+  background-color: white;
+  height: 512px;
+}
+/* line 6, ../scss/components/_entry.scss */
+.entry ul {
+  list-style-type: none;
+}
+/* line 9, ../scss/components/_entry.scss */
+.entry ul li.school {
+  margin: 32px;
+}
+/* line 12, ../scss/components/_entry.scss */
+.entry ul li.school:first-child::after {
+  content: ' ';
+  display: block;
+  width: 100%;
+  height: 16px;
+  border-bottom: thin solid #bdbdbd;
+}
+/* line 20, ../scss/components/_entry.scss */
+.entry ul li.school span.spec {
+  font-size: 1.5em;
+  font-weight: 700;
+  display: inline-block;
+}
+/* line 26, ../scss/components/_entry.scss */
+.entry ul li.school span.name {
+  font-weight: 500;
+  color: #757575;
+}
+/* line 31, ../scss/components/_entry.scss */
+.entry ul li.school span.time {
+  display: block;
+  font-size: 1.2em;
+  font-weight: 700;
+  color: #00796b;
+}
+/* line 38, ../scss/components/_entry.scss */
+.entry ul li.school p {
+  margin-top: 8px;
+}
+/* line 45, ../scss/components/_entry.scss */
+.entry h1 {
+  margin: 32px 0 32px 64px;
+  font-weight: 500;
+  color: #00796b;
+}

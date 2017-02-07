@@ -4,11 +4,18 @@
 		position: relative;
 		z-index: 10;
 		padding: 0;
+		min-height: 80px;
+		background-color: $primary-color;
+		color: $primary-color-text;
 
 		span.img-support-text, span.img-subtitle {
 			position: absolute;
 			color: $primary-color-text;
 			text-shadow: 1px 0px 2px rgba(0, 0, 0, 0.5);
+		}
+
+		span {
+			position: absolute;
 		}
 
 		span.img-support-text {
@@ -21,63 +28,43 @@
 		span.img-subtitle {
 			bottom: 32px;
 			left: 100px;
-
 			font-size: 0.8em;
 		}
-	}
 
-	div.info {
-		background-color: $primary-color;
-		color: $primary-color-text;
-		
-		div.row {
-			padding-top: 16px;
-			padding-left: 0;
-			padding-right: 0;
-		}
-
-		div[class|="col"] {
-			position: relative;
-			padding: 0;
-			min-height: 80px;
-			text-align: left;
-			vertical-align: middle;
-		}
-
-		div.col-sm-9 {
-			border-bottom: thin solid $divider-color;
-		}
-		
-		div.col-sm-3 {
-			text-align: center;
-		}
-
-		span {
-			position: absolute;
+		span.bio, span.big-sub, span.big {
+			left: 72px;
 			top: 50%;
 			transform: translate(0, -50%);
 		}
 
-		span.bio {
+		span.big-sub {
 			font-size: 1em;
+			transform: translate(0, 50%);
 		}
 
 		span.big {
 			font-size: 1.2em;
 		}
 
-		span.big-sub {
-			transform: translate(0, 50%);
-			font-size: 1em;
-		}
-
 		span.icon {
-			transform: translate(0, -25%);
+			left: 24px;
+			top: 50%;
+			transform: translate(0, -50%);
 		}
 
 		&:last-child {
 			border-bottom-left-radius: 4px;
 			border-bottom-right-radius: 4px;
 		}
+
+		.info-divider {
+			position: absolute;
+			top: 0;
+			left: 18%;
+			height: 80px;
+			width: 82%;
+			border-bottom: thin solid $divider-color;
+		}
 	}
+
 }
