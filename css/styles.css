@@ -33,9 +33,9 @@ section {
 }
 
 /* line 26, ../scss/base/_normalize.scss */
-.general-info {
-  padding-left: 0;
-  padding-right: 0;
+.container-fluid {
+  padding-left: 8px;
+  padding-right: 8px;
 }
 
 /* line 31, ../scss/base/_normalize.scss */
@@ -90,32 +90,33 @@ section {
   left: 100px;
   font-size: 2em;
 }
-/* line 28, ../scss/components/_contact.scss */
+/* line 27, ../scss/components/_contact.scss */
 #contact .col-sm-12 span.img-subtitle {
   bottom: 32px;
   left: 100px;
   font-size: 0.8em;
 }
-/* line 34, ../scss/components/_contact.scss */
+/* line 33, ../scss/components/_contact.scss */
 #contact .col-sm-12 span.bio, #contact .col-sm-12 span.big-sub, #contact .col-sm-12 span.big {
   left: 72px;
   top: 50%;
   transform: translate(0, -50%);
 }
-/* line 40, ../scss/components/_contact.scss */
-#contact .col-sm-12 span.big-sub {
-  font-size: 1em;
-  transform: translate(0, 50%);
+/* line 39, ../scss/components/_contact.scss */
+#contact .col-sm-12 span.icon {
+  top: 50%;
+  left: 24px;
+  transform: translate(0, -50%);
 }
 /* line 45, ../scss/components/_contact.scss */
+#contact .col-sm-12 span.big-sub {
+  font-size: 1em;
+  transform: translate(0, 0);
+}
+/* line 50, ../scss/components/_contact.scss */
 #contact .col-sm-12 span.big {
   font-size: 1.2em;
-}
-/* line 49, ../scss/components/_contact.scss */
-#contact .col-sm-12 span.icon {
-  left: 24px;
-  top: 50%;
-  transform: translate(0, -50%);
+  transform: translate(0, -100%);
 }
 /* line 55, ../scss/components/_contact.scss */
 #contact .col-sm-12:last-child {
@@ -280,15 +281,12 @@ section {
 .entry {
   border-radius: 4px;
   background-color: white;
-  height: 512px;
+  min-height: 512px;
+  padding: 32px;
 }
-/* line 6, ../scss/components/_entry.scss */
+/* line 7, ../scss/components/_entry.scss */
 .entry ul {
   list-style-type: none;
-}
-/* line 9, ../scss/components/_entry.scss */
-.entry ul li.school {
-  margin: 32px;
 }
 /* line 12, ../scss/components/_entry.scss */
 .entry ul li.school:first-child::after {
@@ -296,33 +294,40 @@ section {
   display: block;
   width: 100%;
   height: 16px;
+  margin-bottom: 16px;
   border-bottom: thin solid #bdbdbd;
 }
-/* line 20, ../scss/components/_entry.scss */
+/* line 21, ../scss/components/_entry.scss */
 .entry ul li.school span.spec {
   font-size: 1.5em;
   font-weight: 700;
   display: inline-block;
 }
-/* line 26, ../scss/components/_entry.scss */
+/* line 27, ../scss/components/_entry.scss */
 .entry ul li.school span.name {
   font-weight: 500;
   color: #757575;
 }
-/* line 31, ../scss/components/_entry.scss */
+/* line 32, ../scss/components/_entry.scss */
 .entry ul li.school span.time {
   display: block;
   font-size: 1.2em;
   font-weight: 700;
   color: #00796b;
 }
-/* line 38, ../scss/components/_entry.scss */
+/* line 39, ../scss/components/_entry.scss */
 .entry ul li.school p {
   margin-top: 8px;
 }
-/* line 45, ../scss/components/_entry.scss */
+/* line 46, ../scss/components/_entry.scss */
 .entry h1 {
-  margin: 32px 0 32px 64px;
+  margin: 32px 0;
   font-weight: 500;
   color: #00796b;
+}
+/* line 52, ../scss/components/_entry.scss */
+.entry h2 {
+  margin: 32px 0;
+  font-weight: 300;
+  color: #009688;
 }

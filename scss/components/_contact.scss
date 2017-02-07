@@ -21,7 +21,6 @@
 		span.img-support-text {
 			bottom: 48px;
 			left: 100px;
-
 			font-size: 2em;
 		}
 
@@ -37,19 +36,20 @@
 			transform: translate(0, -50%);
 		}
 
+		span.icon {
+			top: 50%;
+			left: 24px;
+			transform: translate(0, -50%);
+		}
+
 		span.big-sub {
 			font-size: 1em;
-			transform: translate(0, 50%);
+			transform: translate(0, 0);
 		}
 
 		span.big {
 			font-size: 1.2em;
-		}
-
-		span.icon {
-			left: 24px;
-			top: 50%;
-			transform: translate(0, -50%);
+			transform: translate(0, -100%);
 		}
 
 		&:last-child {
