@@ -34,27 +34,27 @@ section {
 
 /* line 26, ../scss/base/_normalize.scss */
 .z-1 {
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0);
 }
 
 /* line 30, ../scss/base/_normalize.scss */
 .z-2 {
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0);
 }
 
 /* line 34, ../scss/base/_normalize.scss */
 .z-3 {
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0);
 }
 
 /* line 38, ../scss/base/_normalize.scss */
 .z-4 {
-  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0);
 }
 
 /* line 42, ../scss/base/_normalize.scss */
 .z-5 {
-  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0);
 }
 
 /*------COMPONENTS-------*/
@@ -226,7 +226,7 @@ section {
 /* line 99, ../scss/components/_skills.scss */
 .skills h1 {
   position: absolute;
-  left: 48px;
+  left: 64px;
   bottom: 32px;
   color: white;
   font-weight: 300;
@@ -234,7 +234,7 @@ section {
 /* line 107, ../scss/components/_skills.scss */
 .skills p {
   position: absolute;
-  left: 48px;
+  left: 64px;
   bottom: 8px;
   color: #bdbdbd;
   font-weight: 300;
