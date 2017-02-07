@@ -6,7 +6,7 @@
 body {
   font-family: Roboto;
   background-color: #bdbdbd;
-  text-color: #212121;
+  color: #212121;
   border-collapse: separate;
   padding-top: 128px;
 }
@@ -141,54 +141,107 @@ section {
 
 /*   skills    */
 /* line 3, ../scss/components/_skills.scss */
-#skills ul {
+.skills ul {
   list-style-type: none;
-}
-/* line 6, ../scss/components/_skills.scss */
-#skills ul li {
-  margin-left: 24px;
+  padding: 16px;
+  position: relative;
 }
 /* line 8, ../scss/components/_skills.scss */
-#skills ul li::after {
+.skills ul li {
+  position: relative;
+  margin-left: 36px;
+}
+/* line 12, ../scss/components/_skills.scss */
+.skills ul li::after {
   content: ' ';
   display: block;
   height: 2px;
   border: thin solid black;
   margin: 16px 0 32px 0;
 }
-/* line 17, ../scss/components/_skills.scss */
-#skills ul li.skill-web-html::before {
-  content: '';
-  display: inline-block;
+/* line 20, ../scss/components/_skills.scss */
+.skills ul li img {
   position: absolute;
-  left: 0;
+  left: -46px;
+  top: 24px;
+  opacity: 0.7;
 }
-/* line 25, ../scss/components/_skills.scss */
-#skills h1 {
+/* line 28, ../scss/components/_skills.scss */
+.skills ul li.skill::before {
+  margin-top: 36px;
+  content: ' ';
+  display: inline-block;
+  height: 2px;
+  border: thin solid #009688;
   position: absolute;
-  left: 50px;
-  bottom: 100px;
+}
+/* line 39, ../scss/components/_skills.scss */
+.skills ul li.s85 span.circle {
+  left: 85%;
+}
+/* line 43, ../scss/components/_skills.scss */
+.skills ul li.s85::before {
+  width: 85%;
+}
+/* line 49, ../scss/components/_skills.scss */
+.skills ul li.s80 span.circle {
+  left: 80%;
+}
+/* line 53, ../scss/components/_skills.scss */
+.skills ul li.s80::before {
+  width: 80%;
+}
+/* line 59, ../scss/components/_skills.scss */
+.skills ul li.s75 span.circle {
+  left: 75%;
+}
+/* line 63, ../scss/components/_skills.scss */
+.skills ul li.s75::before {
+  width: 75%;
+}
+/* line 69, ../scss/components/_skills.scss */
+.skills ul li.s70 span.circle {
+  left: 70%;
+}
+/* line 73, ../scss/components/_skills.scss */
+.skills ul li.s70::before {
+  width: 70%;
+}
+/* line 79, ../scss/components/_skills.scss */
+.skills ul li.s65 span.circle {
+  left: 65%;
+}
+/* line 83, ../scss/components/_skills.scss */
+.skills ul li.s65::before {
+  width: 65%;
+}
+/* line 89, ../scss/components/_skills.scss */
+.skills ul li.s60 span.circle {
+  left: 60%;
+}
+/* line 93, ../scss/components/_skills.scss */
+.skills ul li.s60::before {
+  width: 60%;
+}
+/* line 99, ../scss/components/_skills.scss */
+.skills h1 {
+  position: absolute;
+  left: 48px;
+  bottom: 32px;
   color: white;
   font-weight: 300;
 }
-/* line 33, ../scss/components/_skills.scss */
-#skills p {
+/* line 107, ../scss/components/_skills.scss */
+.skills p {
   position: absolute;
-  left: 50px;
-  bottom: 78px;
+  left: 48px;
+  bottom: 8px;
   color: #bdbdbd;
   font-weight: 300;
   font-size: 1.2em;
 }
-/* line 42, ../scss/components/_skills.scss */
-#skills h2 {
-  color: #757575;
-  font-size: 1.2em;
-  font-weight: 300;
-  margin: 16px 0;
-}
-/* line 51, ../scss/components/_skills.scss */
-#skills span.three-dots::after {
+/* line 118, ../scss/components/_skills.scss */
+.skills span.three-dots::after {
   content: '\22EE';
   color: white;
   font-weight: 300;
@@ -197,24 +250,36 @@ section {
   right: 16px;
   top: 16px;
 }
-/* line 61, ../scss/components/_skills.scss */
-#skills span.three-dots:hover {
+/* line 128, ../scss/components/_skills.scss */
+.skills span.three-dots:hover {
   cursor: pointer;
 }
-/* line 66, ../scss/components/_skills.scss */
-#skills div.card-header {
+/* line 133, ../scss/components/_skills.scss */
+.skills div.card-header {
   position: relative;
   background-color: #009688;
-  height: 240px;
-  padding-bottom: 25%;
+  padding-top: 33%;
+  padding-left: 0;
+  padding-right: 0;
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
 }
-/* line 75, ../scss/components/_skills.scss */
-#skills div.card-content {
+/* line 143, ../scss/components/_skills.scss */
+.skills div.card-content {
   background-color: white;
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
+}
+/* line 149, ../scss/components/_skills.scss */
+.skills span.circle {
+  display: inline-block;
+  position: absolute;
+  top: 29px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #009688;
+  color: #009688;
 }
 
 /*   entry      */

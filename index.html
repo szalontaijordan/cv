@@ -23,23 +23,23 @@
       <div class="row">
 
         <div class="col-sm-8">
-          <div class="row">
-            <div class="education">
+          <section class="row">
+            <div class="education col-sm-12">
               <h1>Iskoláim</h1>
             </div>
-          </div>
+          </section>
 
-          <div class="row">
-            <div class="interests">
+          <section class="row">
+            <div class="interests col-sm-12">
               <h1>Érdeklődési köröm</h1>
             </div>
-          </div>
+          </section>
           
-          <div class="row">
-            <div class="things-i-do">
+          <section class="row">
+            <div class="things-i-do col-sm-12">
               <h1>Dolgok, melyeket csinálok</h1>
             </div>
-          </div>
+          </section>
         </div>
 
         <div class="col-sm-4 general-info">
@@ -90,47 +90,77 @@
               </div>  
             </div>   
           </section> 
-          <section id="skills" class="row z-1">
+          <section id="web" class="row z-1 skills">
             <div class="card-header col-sm-12">
-              <h1>Miben vagyok jó?</h1>
-              <p>Jelenlegi tudásom röviden</p>
+              <h1>Web</h1>
+              <p>Miben vagyok jó?</p>
               <span class="three-dots"></span>
             </div>
             <div class="card-content col-sm-12">
               <div class="skill-web">
-                <h2 class="skill-title">Web</h2>
-                <div class="details">
                   <ul>
-                    <li class="skill-web-html">HTML</li>
-                    <li class="skill-web-css">CSS</li>
-                    <li class="skill-web-scss">SASS</li>
-                    <li class="skill-web-js">JavaScript</li>
+                    <li class="skill s85">
+                      <img src="res/language-html5.png" />
+                      <span>HTML</span>
+                      <span class="circle"></span>
+                    </li>
+                    <li class="skill s80">
+                      <img src="res/language-css3.png" />
+                      <span>CSS</span>
+                      <span class="circle"></span>
+                    </li>
+                    <li class="skill s80">
+                      <img src="res/language-css3.png" />
+                      <span>SASS</span>
+                      <span class="circle"></span>
+                    </li>
+                    <li class="skill s75">
+                      <img src="res/language-javascript.png" />
+                      <span>JavaScript</span>
+                      <span class="circle"></span>
+                    </li>
+                    <li class="skill s65">
+                      <img src="res/language-javascript.png" />
+                      <span>JQuery</span>
+                      <span class="circle"></span>
+                    </li>
                   </ul>
-                </div>
               </div>
-              <div class="skill-programming">
-                <h2 class="skill-title">Programozás</h2>
-                <div class="details">
-                  <ul>
-                    <li class="skill-programming-java">Java</li>
-                    <li class="skill-programming-algthink">Algoritmikus gondolkodás</li>
-                  </ul>
-                </div>
-              </div>
+            </div>
+          </section>
+          <section id="other" class="row z-1 skills">
+            <div class="card-header col-sm-12">
+              <h1>Egyéb</h1>
+              <p>Miben vagyok jó?</p>
+              <span class="three-dots"></span>
+            </div>
+            <div class="card-content col-sm-12">
               <div class="skill-other">
-                <h2 class="skill-title">Egyéb</h2>
-                <div class="details">
                   <ul>
-                    <li class="skill-other-git">Git</li>
-                    <li class="skill-other-msoffice">MS Office</li>
-                    <li class="skill-other-learning">Tanulási tempó</li>
-                    <li class="skill-other-english">Angol nyelvtudás</li>
+                    <li class="skill s75">
+                      <img src="res/coffee.png" />
+                      <span>Java</span>
+                      <span class="circle"></span>
+                    </li>
+                    <li class="skill s70">
+                      <img src="res/github-circle.png" />
+                      <span>Git</span>
+                      <span class="circle"></span>
+                    </li>
+                    <li class="skill s75">
+                      <img src="res/windows.png" />
+                      <span>MS Office</span>
+                      <span class="circle"></span>
+                    </li>
+                    <li class="skill s65">
+                      <img src="res/flag.png" />
+                      <span>Angol nyelvtudás</span>
+                      <span class="circle"></span>
+                    </li>
                   </ul>
-                </div>
               </div>
-
-            </div> 
-          </section> 
+            </div>
+          </section>
         </div>
       </div>
     </div>
@@ -139,26 +169,17 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="js/jquery.js"></script>
-    <script src="js/bootstrap.js"></script>  
-    <script src="js/main.js"></script>  
+    <script src="js/bootstrap.js"></script> 
+    <!-- 
+      <script src="js/main.js"></script>  
+    -->
 
     <script>
-      $(document).ready(function(){
-        $(".navbar a, footer a[href='#top']").on('click', function(event) {
+      $(document).ready(function() {
 
-          if (this.hash !== "") {
-            event.preventDefault();
-
-            var hash = this.hash;
-
-            $('html, body').animate({scrollTop: $(hash).offset().top - 32}, 900, function() {
-              window.location.hash = hash;
-            });
-          }
-        });
-
+        // slide in elements
         $(window).scroll(function() {
-          $(".slideanim").each(function(){
+          $(".slideanim").each(function() {
             var pos = $(this).offset().top;
 
             var winTop = $(window).scrollTop();
@@ -166,8 +187,8 @@
               $(this).addClass("slide");
             }
           });
-        });
-      })
+        }); //end slide in elements
+      });
     </script>
 
   </body>
