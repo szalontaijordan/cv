@@ -39,28 +39,40 @@ section {
 }
 
 /* line 31, ../scss/base/_normalize.scss */
-.z-1 {
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0);
-}
-
-/* line 35, ../scss/base/_normalize.scss */
-.z-2 {
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0);
-}
-
-/* line 39, ../scss/base/_normalize.scss */
-.z-3 {
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0);
+div.fab {
+  z-index: 9999;
+  position: fixed;
+  bottom: 64px;
+  right: 144px;
+  width: 64px;
+  height: 64px;
+  background-color: #03a9f4;
+  border-radius: 50%;
 }
 
 /* line 43, ../scss/base/_normalize.scss */
-.z-4 {
-  box-shadow: 0 14px 28px rgba(0, 0, 0, 0);
+.z-1 {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
 }
 
 /* line 47, ../scss/base/_normalize.scss */
+.z-2 {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+}
+
+/* line 51, ../scss/base/_normalize.scss */
+.z-3 {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19);
+}
+
+/* line 55, ../scss/base/_normalize.scss */
+.z-4 {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25);
+}
+
+/* line 59, ../scss/base/_normalize.scss */
 .z-5 {
-  box-shadow: 0 19px 38px rgba(0, 0, 0, 0);
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3);
 }
 
 /*------COMPONENTS-------*/
@@ -78,7 +90,7 @@ section {
 #contact .col-sm-12 span.img-support-text, #contact .col-sm-12 span.img-subtitle {
   position: absolute;
   color: white;
-  text-shadow: 1px 0px 2px rgba(0, 0, 0, 0.5);
+  text-shadow: 1px 0px 2px rgba(0, 0, 0, 0);
 }
 /* line 17, ../scss/components/_contact.scss */
 #contact .col-sm-12 span {
@@ -87,13 +99,13 @@ section {
 /* line 21, ../scss/components/_contact.scss */
 #contact .col-sm-12 span.img-support-text {
   bottom: 48px;
-  left: 100px;
+  left: 72px;
   font-size: 2em;
 }
 /* line 27, ../scss/components/_contact.scss */
 #contact .col-sm-12 span.img-subtitle {
   bottom: 32px;
-  left: 100px;
+  left: 72px;
   font-size: 0.8em;
 }
 /* line 33, ../scss/components/_contact.scss */

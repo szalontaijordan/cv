@@ -28,6 +28,18 @@ section {
 	padding-right: 8px;
 }
 
+div.fab {
+	z-index: 9999;
+	position: fixed;
+	bottom: 64px;
+	right: 144px;
+	width: 64px;
+	height: 64px;
+
+	background-color: $accent-color;
+	border-radius: 50%;
+}
+
 .z-1 {
   box-shadow: 0 1px 3px rgba(0,0,0,0.12);
 }
