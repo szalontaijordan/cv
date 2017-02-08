@@ -1,6 +1,6 @@
 body {
 	font-family: Roboto;
-	background-color: $divider-color;
+	background-color: lighten($divider-color, 15%);
 	color: $primary-text-color;
 	border-collapse: separate;
 	padding-top: 16px;
@@ -23,21 +23,25 @@ section {
 	margin-bottom: 16px;
 }
 
+b {
+	color: $primary-color-dark;
+}
+
+a {
+	color: $accent-color;
+
+	&:hover {
+		color: $primary-color-dark;		
+	}
+
+	&:active {
+		color: $primary-color-dark;		
+	}
+}
+
 .container-fluid {
 	padding-left: 8px;
 	padding-right: 8px;
-}
-
-div.fab {
-	z-index: 9999;
-	position: fixed;
-	bottom: 64px;
-	right: 144px;
-	width: 64px;
-	height: 64px;
-
-	background-color: $accent-color;
-	border-radius: 50%;
 }
 
 .z-1 {
@@ -58,4 +62,34 @@ div.fab {
 
 .z-5 {
   box-shadow: 0 19px 38px rgba(0,0,0,0.30);
+}
+
+.slideanim {visibility:hidden;}
+.slide {
+    animation-name: slide;
+    -webkit-animation-name: slide; 
+    animation-duration: 1s; 
+    -webkit-animation-duration: 1s;
+    visibility: visible; 
+}
+
+@keyframes slide {
+    0% {
+        opacity: 0;
+        transform: translateY(50%);
+    } 
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    } 
+}
+@-webkit-keyframes slide {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(50%);
+    } 
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+    }
 }

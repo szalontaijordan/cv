@@ -1,0 +1,16 @@
+#idea {
+
+	.col-sm-12 {
+		background-color: $primary-color-text;
+		padding: 32px;
+
+		p {
+			margin: 16px 0;
+		}
+
+		a {
+			display: block;
+			padding-left: 16px;
+		}
+	}
+}

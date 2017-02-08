@@ -5,7 +5,7 @@
 /* line 1, ../scss/base/_normalize.scss */
 body {
   font-family: Roboto;
-  background-color: #bdbdbd;
+  background-color: #e3e3e3;
   color: #212121;
   border-collapse: separate;
   padding-top: 16px;
@@ -33,46 +33,94 @@ section {
 }
 
 /* line 26, ../scss/base/_normalize.scss */
+b {
+  color: #00796b;
+}
+
+/* line 30, ../scss/base/_normalize.scss */
+a {
+  color: #03a9f4;
+}
+/* line 33, ../scss/base/_normalize.scss */
+a:hover {
+  color: #00796b;
+}
+/* line 37, ../scss/base/_normalize.scss */
+a:active {
+  color: #00796b;
+}
+
+/* line 42, ../scss/base/_normalize.scss */
 .container-fluid {
   padding-left: 8px;
   padding-right: 8px;
 }
 
-/* line 31, ../scss/base/_normalize.scss */
-div.fab {
-  z-index: 9999;
-  position: fixed;
-  bottom: 64px;
-  right: 144px;
-  width: 64px;
-  height: 64px;
-  background-color: #03a9f4;
-  border-radius: 50%;
-}
-
-/* line 43, ../scss/base/_normalize.scss */
-.z-1 {
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
-}
-
 /* line 47, ../scss/base/_normalize.scss */
-.z-2 {
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+.z-1 {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0);
 }
 
 /* line 51, ../scss/base/_normalize.scss */
-.z-3 {
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19);
+.z-2 {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0);
 }
 
 /* line 55, ../scss/base/_normalize.scss */
-.z-4 {
-  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25);
+.z-3 {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0);
 }
 
 /* line 59, ../scss/base/_normalize.scss */
+.z-4 {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0);
+}
+
+/* line 63, ../scss/base/_normalize.scss */
 .z-5 {
-  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0);
+}
+
+/* line 67, ../scss/base/_normalize.scss */
+.slideanim {
+  visibility: hidden;
+}
+
+/* line 68, ../scss/base/_normalize.scss */
+.slide {
+  animation-name: slide;
+  -webkit-animation-name: slide;
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+  visibility: visible;
+}
+
+@keyframes slide {
+  /* line 77, ../scss/base/_normalize.scss */
+  0% {
+    opacity: 0;
+    transform: translateY(50%);
+  }
+
+  /* line 81, ../scss/base/_normalize.scss */
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+@-webkit-keyframes slide {
+  /* line 87, ../scss/base/_normalize.scss */
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(50%);
+  }
+
+  /* line 91, ../scss/base/_normalize.scss */
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+  }
 }
 
 /*------COMPONENTS-------*/
@@ -142,7 +190,7 @@ div.fab {
   left: 18%;
   height: 80px;
   width: 82%;
-  border-bottom: thin solid #bdbdbd;
+  border-bottom: thin solid #757575;
 }
 
 /*   skills    */
@@ -288,12 +336,28 @@ div.fab {
   color: #009688;
 }
 
+/*   idea    */
+/* line 3, ../scss/components/_idea.scss */
+#idea .col-sm-12 {
+  background-color: white;
+  padding: 32px;
+}
+/* line 7, ../scss/components/_idea.scss */
+#idea .col-sm-12 p {
+  margin: 16px 0;
+}
+/* line 11, ../scss/components/_idea.scss */
+#idea .col-sm-12 a {
+  display: block;
+  padding-left: 16px;
+}
+
 /*   entry      */
 /* line 1, ../scss/components/_entry.scss */
 .entry {
   border-radius: 4px;
   background-color: white;
-  min-height: 512px;
+  min-height: 128px;
   padding: 32px;
 }
 /* line 7, ../scss/components/_entry.scss */
@@ -317,29 +381,113 @@ div.fab {
 }
 /* line 27, ../scss/components/_entry.scss */
 .entry ul li.school span.name {
+  font-size: 1.5em;
+  display: block;
   font-weight: 500;
   color: #757575;
 }
-/* line 32, ../scss/components/_entry.scss */
+/* line 34, ../scss/components/_entry.scss */
 .entry ul li.school span.time {
   display: block;
   font-size: 1.2em;
   font-weight: 700;
   color: #00796b;
 }
-/* line 39, ../scss/components/_entry.scss */
+/* line 41, ../scss/components/_entry.scss */
 .entry ul li.school p {
   margin-top: 8px;
 }
-/* line 46, ../scss/components/_entry.scss */
+/* line 48, ../scss/components/_entry.scss */
 .entry h1 {
   margin: 32px 0;
   font-weight: 500;
   color: #00796b;
 }
-/* line 52, ../scss/components/_entry.scss */
+/* line 54, ../scss/components/_entry.scss */
 .entry h2 {
   margin: 32px 0;
   font-weight: 300;
   color: #009688;
+}
+
+/* line 62, ../scss/components/_entry.scss */
+#things-i-do p, #things-i-do span, #freetime p, #freetime span {
+  font-size: 1.2em;
+}
+/* line 66, ../scss/components/_entry.scss */
+#things-i-do li, #freetime li {
+  color: #00796b;
+}
+/* line 68, ../scss/components/_entry.scss */
+#things-i-do li *, #freetime li * {
+  font-weight: 500;
+}
+
+/* line 74, ../scss/components/_entry.scss */
+#references {
+  padding: 0;
+  position: relative;
+}
+/* line 78, ../scss/components/_entry.scss */
+#references .col-sm-12 {
+  padding-left: 0;
+  padding-right: 0;
+  overflow: hidden;
+  min-height: 434px;
+}
+/* line 85, ../scss/components/_entry.scss */
+#references div.img-hover {
+  position: relative;
+  z-index: 100;
+}
+/* line 89, ../scss/components/_entry.scss */
+#references div.img-hover:hover {
+  cursor: pointer;
+}
+/* line 92, ../scss/components/_entry.scss */
+#references div.img-hover:hover img {
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+/* line 99, ../scss/components/_entry.scss */
+#references div.img-hover img {
+  max-width: 100%;
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+/* line 106, ../scss/components/_entry.scss */
+#references div.img-hover div.img-layer {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #b2dfdb;
+  opacity: 0.5;
+}
+/* line 117, ../scss/components/_entry.scss */
+#references h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #212121;
+  z-index: 200;
+}
+
+/* line 128, ../scss/components/_entry.scss */
+#footer .col-sm-12 {
+  height: 64px;
+}
+/* line 132, ../scss/components/_entry.scss */
+#footer span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.5em;
+  font-weight: 500;
+  color: #00796b;
 }

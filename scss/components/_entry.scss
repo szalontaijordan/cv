@@ -1,7 +1,7 @@
 .entry {
 	border-radius: 4px;
 	background-color: $primary-color-text;
-	min-height: 512px;
+	min-height: 128px;
 	padding: 32px;
 
 	ul {
@@ -25,6 +25,8 @@
 			}
 
 			span.name {
+				font-size: 1.5em;
+				display: block;
 				font-weight: 500;
 				color: $secondary-text-color;
 			}
@@ -53,5 +55,88 @@
 		margin: 32px 0;
 		font-weight: 300;
 		color: $primary-color;	
+	}
+}
+
+#things-i-do, #freetime {
+	p, span {
+		font-size: 1.2em;
+	}
+
+	li {
+		color: $primary-color-dark;
+		* {
+			font-weight: 500;
+		}
+	}
+}
+
+#references {
+	padding: 0;
+	position: relative;
+
+	.col-sm-12 {
+		padding-left: 0;
+		padding-right: 0;
+		overflow: hidden;
+		min-height: 434px;
+	}
+
+	div.img-hover {
+		position: relative;
+		z-index: 100;
+
+		&:hover {
+			cursor: pointer; 
+
+			img {
+				-moz-transform: scale(1.1);
+				-webkit-transform: scale(1.1);
+				transform: scale(1.1);
+			}  
+		}
+
+		img {
+			max-width: 100%;
+			-moz-transition: all 0.3s;
+			-webkit-transition: all 0.3s;
+			transition: all 0.3s;
+		}
+
+		div.img-layer {
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			top: 0;
+			left: 0;
+			background-color: $primary-color-light;
+			opacity: 0.5;
+		}
+	}
+
+	h1 {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		color: $primary-text-color;
+		z-index: 200;
+	}
+}
+
+#footer {
+	.col-sm-12 {
+		height: 64px;
+	}
+
+	span {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+
+		font-size: 1.5em;
+		font-weight: 500;
+		color: $primary-color-dark;
 	}
 }
