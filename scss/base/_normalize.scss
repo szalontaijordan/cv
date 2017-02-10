@@ -64,7 +64,10 @@ a {
   box-shadow: 0 19px 38px rgba(0,0,0,0.30);
 }
 
-.slideanim {visibility:hidden;}
+.slideanim {
+	visibility:hidden;
+}
+
 .slide {
     animation-name: slide;
     -webkit-animation-name: slide; 
@@ -92,4 +95,28 @@ a {
         opacity: 1;
         -webkit-transform: translateY(0%);
     }
+}
+
+@media(max-width: 768px) {
+	body {
+		padding-top: 0;
+	}
+
+	div[class|='col'] {
+		width: 100%;
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
+
+@media(min-width: 769px) {
+	div.general-info {
+		position: relative;
+		transform: translate(200%, 0);
+	}
+
+	div.details {
+		position: relative;
+		transform: translate(-50%, 0);
+	}
 }

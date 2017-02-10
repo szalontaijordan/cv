@@ -2,7 +2,6 @@
 /*------ROBOTO FONT------*/
 /*---------BASE----------*/
 /* normalize */
-/* line 1, ../scss/base/_normalize.scss */
 body {
   font-family: Roboto;
   background-color: #e3e3e3;
@@ -11,82 +10,66 @@ body {
   padding-top: 16px;
 }
 
-/* line 9, ../scss/base/_normalize.scss */
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
 }
 
-/* line 13, ../scss/base/_normalize.scss */
 h1 {
   font-weight: 100;
 }
 
-/* line 17, ../scss/base/_normalize.scss */
 p, span {
   font-weight: 300;
 }
 
-/* line 21, ../scss/base/_normalize.scss */
 section {
   z-index: 20;
   margin-bottom: 16px;
 }
 
-/* line 26, ../scss/base/_normalize.scss */
 b {
   color: #00796b;
 }
 
-/* line 30, ../scss/base/_normalize.scss */
 a {
   color: #03a9f4;
 }
-/* line 33, ../scss/base/_normalize.scss */
 a:hover {
   color: #00796b;
 }
-/* line 37, ../scss/base/_normalize.scss */
 a:active {
   color: #00796b;
 }
 
-/* line 42, ../scss/base/_normalize.scss */
 .container-fluid {
   padding-left: 8px;
   padding-right: 8px;
 }
 
-/* line 47, ../scss/base/_normalize.scss */
 .z-1 {
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12);
 }
 
-/* line 51, ../scss/base/_normalize.scss */
 .z-2 {
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0);
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16);
 }
 
-/* line 55, ../scss/base/_normalize.scss */
 .z-3 {
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19);
 }
 
-/* line 59, ../scss/base/_normalize.scss */
 .z-4 {
-  box-shadow: 0 14px 28px rgba(0, 0, 0, 0);
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25);
 }
 
-/* line 63, ../scss/base/_normalize.scss */
 .z-5 {
-  box-shadow: 0 19px 38px rgba(0, 0, 0, 0);
+  box-shadow: 0 19px 38px rgba(0,0,0,0.30);
 }
 
-/* line 67, ../scss/base/_normalize.scss */
 .slideanim {
   visibility: hidden;
 }
 
-/* line 68, ../scss/base/_normalize.scss */
 .slide {
   animation-name: slide;
   -webkit-animation-name: slide;
@@ -96,13 +79,11 @@ a:active {
 }
 
 @keyframes slide {
-  /* line 77, ../scss/base/_normalize.scss */
   0% {
     opacity: 0;
     transform: translateY(50%);
   }
 
-  /* line 81, ../scss/base/_normalize.scss */
   100% {
     opacity: 1;
     transform: translateY(0%);
@@ -110,102 +91,108 @@ a:active {
 }
 
 @-webkit-keyframes slide {
-  /* line 87, ../scss/base/_normalize.scss */
   0% {
     opacity: 0;
     -webkit-transform: translateY(50%);
   }
 
-  /* line 91, ../scss/base/_normalize.scss */
   100% {
     opacity: 1;
     -webkit-transform: translateY(0%);
   }
 }
 
+@media (max-width: 768px) {
+  body {
+    padding-top: 0;
+  }
+
+  div[class|='col'] {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+@media (min-width: 769px) {
+  div.general-info {
+    position: relative;
+    transform: translate(200%, 0);
+  }
+
+  div.details {
+    position: relative;
+    transform: translate(-50%, 0);
+  }
+}
 /*------COMPONENTS-------*/
 /*   contact    */
-/* line 3, ../scss/components/_contact.scss */
 #contact .col-sm-12 {
   position: relative;
   z-index: 10;
-  padding: 0;
-  min-height: 80px;
+  min-height: 100px;
   background-color: #009688;
   color: white;
+  padding: 0;
 }
-/* line 11, ../scss/components/_contact.scss */
 #contact .col-sm-12 span.img-support-text, #contact .col-sm-12 span.img-subtitle {
   position: absolute;
   color: white;
   text-shadow: 1px 0px 2px rgba(0, 0, 0, 0);
 }
-/* line 17, ../scss/components/_contact.scss */
 #contact .col-sm-12 span {
   position: absolute;
 }
-/* line 21, ../scss/components/_contact.scss */
 #contact .col-sm-12 span.img-support-text {
   bottom: 48px;
   left: 72px;
   font-size: 2em;
 }
-/* line 27, ../scss/components/_contact.scss */
 #contact .col-sm-12 span.img-subtitle {
   bottom: 32px;
   left: 72px;
   font-size: 0.8em;
 }
-/* line 33, ../scss/components/_contact.scss */
 #contact .col-sm-12 span.bio, #contact .col-sm-12 span.big-sub, #contact .col-sm-12 span.big {
   left: 72px;
   top: 50%;
   transform: translate(0, -50%);
 }
-/* line 39, ../scss/components/_contact.scss */
 #contact .col-sm-12 span.icon {
   top: 50%;
   left: 24px;
   transform: translate(0, -50%);
 }
-/* line 45, ../scss/components/_contact.scss */
 #contact .col-sm-12 span.big-sub {
   font-size: 1em;
   transform: translate(0, 0);
 }
-/* line 50, ../scss/components/_contact.scss */
 #contact .col-sm-12 span.big {
   font-size: 1.2em;
   transform: translate(0, -100%);
 }
-/* line 55, ../scss/components/_contact.scss */
 #contact .col-sm-12:last-child {
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
 }
-/* line 60, ../scss/components/_contact.scss */
 #contact .col-sm-12 .info-divider {
   position: absolute;
   top: 0;
-  left: 18%;
-  height: 80px;
-  width: 82%;
-  border-bottom: thin solid #757575;
+  left: 0;
+  height: 100px;
+  width: 100%;
+  border-bottom: 1px solid #b2dfdb;
 }
 
 /*   skills    */
-/* line 3, ../scss/components/_skills.scss */
 .skills ul {
   list-style-type: none;
   padding: 16px;
   position: relative;
 }
-/* line 8, ../scss/components/_skills.scss */
 .skills ul li {
   position: relative;
   margin-left: 36px;
 }
-/* line 12, ../scss/components/_skills.scss */
 .skills ul li::after {
   content: ' ';
   display: block;
@@ -213,14 +200,12 @@ a:active {
   border: thin solid black;
   margin: 16px 0 32px 0;
 }
-/* line 20, ../scss/components/_skills.scss */
 .skills ul li img {
   position: absolute;
   left: -46px;
   top: 24px;
   opacity: 0.7;
 }
-/* line 28, ../scss/components/_skills.scss */
 .skills ul li.skill::before {
   margin-top: 36px;
   content: ' ';
@@ -229,55 +214,42 @@ a:active {
   border: thin solid #009688;
   position: absolute;
 }
-/* line 39, ../scss/components/_skills.scss */
 .skills ul li.s85 span.circle {
   left: 85%;
 }
-/* line 43, ../scss/components/_skills.scss */
 .skills ul li.s85::before {
   width: 85%;
 }
-/* line 49, ../scss/components/_skills.scss */
 .skills ul li.s80 span.circle {
   left: 80%;
 }
-/* line 53, ../scss/components/_skills.scss */
 .skills ul li.s80::before {
   width: 80%;
 }
-/* line 59, ../scss/components/_skills.scss */
 .skills ul li.s75 span.circle {
   left: 75%;
 }
-/* line 63, ../scss/components/_skills.scss */
 .skills ul li.s75::before {
   width: 75%;
 }
-/* line 69, ../scss/components/_skills.scss */
 .skills ul li.s70 span.circle {
   left: 70%;
 }
-/* line 73, ../scss/components/_skills.scss */
 .skills ul li.s70::before {
   width: 70%;
 }
-/* line 79, ../scss/components/_skills.scss */
 .skills ul li.s65 span.circle {
   left: 65%;
 }
-/* line 83, ../scss/components/_skills.scss */
 .skills ul li.s65::before {
   width: 65%;
 }
-/* line 89, ../scss/components/_skills.scss */
 .skills ul li.s60 span.circle {
   left: 60%;
 }
-/* line 93, ../scss/components/_skills.scss */
 .skills ul li.s60::before {
   width: 60%;
 }
-/* line 99, ../scss/components/_skills.scss */
 .skills h1 {
   position: absolute;
   left: 64px;
@@ -285,7 +257,6 @@ a:active {
   color: white;
   font-weight: 300;
 }
-/* line 107, ../scss/components/_skills.scss */
 .skills p {
   position: absolute;
   left: 64px;
@@ -294,7 +265,6 @@ a:active {
   font-weight: 300;
   font-size: 1.2em;
 }
-/* line 118, ../scss/components/_skills.scss */
 .skills span.three-dots::after {
   content: '\22EE';
   color: white;
@@ -304,11 +274,6 @@ a:active {
   right: 16px;
   top: 16px;
 }
-/* line 128, ../scss/components/_skills.scss */
-.skills span.three-dots:hover {
-  cursor: pointer;
-}
-/* line 133, ../scss/components/_skills.scss */
 .skills div.card-header {
   position: relative;
   background-color: #009688;
@@ -318,13 +283,11 @@ a:active {
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
 }
-/* line 143, ../scss/components/_skills.scss */
 .skills div.card-content {
   background-color: white;
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
 }
-/* line 149, ../scss/components/_skills.scss */
 .skills span.circle {
   display: inline-block;
   position: absolute;
@@ -337,34 +300,28 @@ a:active {
 }
 
 /*   idea    */
-/* line 3, ../scss/components/_idea.scss */
 #idea .col-sm-12 {
   background-color: white;
   padding: 32px;
 }
-/* line 7, ../scss/components/_idea.scss */
 #idea .col-sm-12 p {
   margin: 16px 0;
 }
-/* line 11, ../scss/components/_idea.scss */
 #idea .col-sm-12 a {
   display: block;
   padding-left: 16px;
 }
 
 /*   entry      */
-/* line 1, ../scss/components/_entry.scss */
 .entry {
   border-radius: 4px;
   background-color: white;
   min-height: 128px;
   padding: 32px;
 }
-/* line 7, ../scss/components/_entry.scss */
 .entry ul {
   list-style-type: none;
 }
-/* line 12, ../scss/components/_entry.scss */
 .entry ul li.school:first-child::after {
   content: ' ';
   display: block;
@@ -373,91 +330,75 @@ a:active {
   margin-bottom: 16px;
   border-bottom: thin solid #bdbdbd;
 }
-/* line 21, ../scss/components/_entry.scss */
 .entry ul li.school span.spec {
   font-size: 1.5em;
   font-weight: 700;
   display: inline-block;
 }
-/* line 27, ../scss/components/_entry.scss */
 .entry ul li.school span.name {
   font-size: 1.5em;
   display: block;
   font-weight: 500;
   color: #757575;
 }
-/* line 34, ../scss/components/_entry.scss */
 .entry ul li.school span.time {
   display: block;
   font-size: 1.2em;
   font-weight: 700;
   color: #00796b;
 }
-/* line 41, ../scss/components/_entry.scss */
 .entry ul li.school p {
   margin-top: 8px;
 }
-/* line 48, ../scss/components/_entry.scss */
 .entry h1 {
   margin: 32px 0;
   font-weight: 500;
   color: #00796b;
 }
-/* line 54, ../scss/components/_entry.scss */
 .entry h2 {
   margin: 32px 0;
   font-weight: 300;
   color: #009688;
 }
 
-/* line 62, ../scss/components/_entry.scss */
 #things-i-do p, #things-i-do span, #freetime p, #freetime span {
   font-size: 1.2em;
 }
-/* line 66, ../scss/components/_entry.scss */
 #things-i-do li, #freetime li {
   color: #00796b;
 }
-/* line 68, ../scss/components/_entry.scss */
 #things-i-do li *, #freetime li * {
   font-weight: 500;
 }
 
-/* line 74, ../scss/components/_entry.scss */
 #references {
   padding: 0;
   position: relative;
 }
-/* line 78, ../scss/components/_entry.scss */
 #references .col-sm-12 {
   padding-left: 0;
   padding-right: 0;
   overflow: hidden;
   min-height: 434px;
 }
-/* line 85, ../scss/components/_entry.scss */
 #references div.img-hover {
   position: relative;
   z-index: 100;
 }
-/* line 89, ../scss/components/_entry.scss */
 #references div.img-hover:hover {
   cursor: pointer;
 }
-/* line 92, ../scss/components/_entry.scss */
 #references div.img-hover:hover img {
   -moz-transform: scale(1.1);
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
-/* line 99, ../scss/components/_entry.scss */
 #references div.img-hover img {
   max-width: 100%;
   -moz-transition: all 0.3s;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
-/* line 106, ../scss/components/_entry.scss */
 #references div.img-hover div.img-layer {
   width: 100%;
   height: 100%;
@@ -467,7 +408,6 @@ a:active {
   background-color: #b2dfdb;
   opacity: 0.5;
 }
-/* line 117, ../scss/components/_entry.scss */
 #references h1 {
   position: absolute;
   top: 50%;
@@ -477,11 +417,19 @@ a:active {
   z-index: 200;
 }
 
-/* line 128, ../scss/components/_entry.scss */
+@media (max-width: 768px) {
+  #references img {
+    display: none;
+  }
+  #references .col-sm-12 {
+    position: relative;
+    background-image: url("../res/dorapage-layer.png");
+    background-position: center;
+  }
+}
 #footer .col-sm-12 {
   height: 64px;
 }
-/* line 132, ../scss/components/_entry.scss */
 #footer span {
   position: absolute;
   top: 50%;

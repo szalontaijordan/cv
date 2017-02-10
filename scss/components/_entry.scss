@@ -124,6 +124,20 @@
 	}
 }
 
+@media(max-width: 768px) {
+	#references {
+		img {
+			display: none;
+		}
+
+		.col-sm-12 {
+			position: relative;
+			background-image: url('../res/dorapage-layer.png');
+			background-position: center;
+		}
+	}	
+}
+
 #footer {
 	.col-sm-12 {
 		height: 64px;

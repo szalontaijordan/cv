@@ -13,14 +13,159 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="css/bootstrap.css" rel="stylesheet" />
     <link href="css/styles.css" rel="stylesheet">
-
   </head>
 
-  <body data-spy="scroll" data-target=".navbar" data-offset="60">
+  <body>
+    <!-- Main container -->
     <div class="container">
       <div class="row">
+      <!-- Aside panel -->
+        <div class="col-sm-4 general-info">
+          <!-- Contact card -->
+          <section id="contact" class="container-fluid">
+            <div class="row z-2">
+              <div class="col-sm-12">
+                <img src="res/jordan.jpg" alt="Jordán" class="cv-img img-responsive" />
+                <span class="img-support-text">Szalontai Jordán</span>
+                <span class="img-subtitle">Debreceni Egyetem</span>
+              </div>
+              
+              <div class="col-sm-12">
+                <span class="icon"><i class="material-icons">account_circle</i></span>
+                <span class="bio">Úgy gondolom, van helyem a szakmában, mivel kellő programozói és webfejlesztési ismerettel rendelkezem.</span>
+                <span class="info-divider"></span>
+              </div>
 
-        <div class="col-sm-8">
+              <div class="col-sm-12">
+                <span class="icon"><i class="material-icons">phone</i></span>
+                <span class="big">(30) 338 1166</span>
+                <span class="big-sub">Mobil</span>
+                <span class="info-divider"></span>
+              </div>
+              
+              <div class="col-sm-12">
+                <span class="icon"><i class="material-icons">mail</i></span>
+                <span class="big">jordanlt1111@gmail.com</span>
+                <span class="big-sub">Személyes</span>
+                <span class="info-divider"></span>
+              </div>
+              
+              <div class="col-sm-12">
+                <span class="icon"><i class="material-icons">home</i></span>
+                <span class="big">4400 Nyíregyháza, Petőfi u. 4.</span>
+                <span class="big-sub">Állandó lakcím</span>
+              </div>
+            </div>   
+          </section> 
+
+          <!-- Web skills card -->
+          <section id="web" class="container-fluid skills">
+            <div class="row">
+              <div class="card-header col-sm-12 z-2">
+                <h1>Web</h1>
+                <p>Miben vagyok jó?</p>
+                <span class="three-dots"></span>
+              </div>
+              <div class="card-content col-sm-12 z-2">
+                <div class="skill-web">
+                    <ul>
+                      <li class="skill s85">
+                        <img src="res/language-html5.png" />
+                        <span>HTML</span>
+                        <span class="circle"></span>
+                      </li>
+                      <li class="skill s80">
+                        <img src="res/language-css3.png" />
+                        <span>CSS</span>
+                        <span class="circle"></span>
+                      </li>
+                      <li class="skill s75">
+                        <img src="res/language-css3.png" />
+                        <span>SASS</span>
+                        <span class="circle"></span>
+                      </li>
+                      <li class="skill s75">
+                        <img src="res/language-javascript.png" />
+                        <span>JavaScript</span>
+                        <span class="circle"></span>
+                      </li>
+                      <li class="skill s65">
+                        <img src="res/language-javascript.png" />
+                        <span>JQuery</span>
+                        <span class="circle"></span>
+                      </li>
+                    </ul>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Other skills card -->
+          <section id="other" class="container-fluid skills">
+            <div class="row">
+              <div class="card-header col-sm-12  z-2">
+                <h1>Egyéb</h1>
+                <p>Miben vagyok jó?</p>
+                <span class="three-dots"></span>
+              </div>
+              <div class="card-content col-sm-12  z-2">
+                <div class="skill-other">
+                    <ul>
+                      <li class="skill s85">
+                        <img src="res/keyboard.png" />
+                        <span>10 ujjas gépírás</span>
+                        <span class="circle"></span>
+                      </li>
+                      <li class="skill s75">
+                        <img src="res/coffee.png" />
+                        <span>Java</span>
+                        <span class="circle"></span>
+                      </li>
+                      <li class="skill s75">
+                        <img src="res/windows.png" />
+                        <span>MS Office</span>
+                        <span class="circle"></span>
+                      </li>
+                      <li class="skill s70">
+                        <img src="res/github-circle.png" />
+                        <span>Git</span>
+                        <span class="circle"></span>
+                      </li>
+                      <li class="skill s65">
+                        <img src="res/flag.png" />
+                        <span>Angol nyelvtudás</span>
+                        <span class="circle"></span>
+                      </li>
+                    </ul>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Idea of this page -->
+          <section id="idea" class="container-fluid">
+            <div class="row z-2">
+              <div class="col-sm-12">
+                <p>Ötlet:</p>
+                <a href="http://demo.deviserweb.com/cv/index.html">Material CV template</a>
+
+                <p>Megvalósítás:</p>
+                <a href="http://getbootstrap.com/">Bootstrap</a>
+                <a href="http://sass-lang.com/">Sass</a>
+                <a href="http://scout-app.io/classic/">ScoutApp : the Sass/Compass GUI</a>
+                <a href="https://www.materialpalette.com/icons">Material Design icons 1</a>
+                <a href="https://materialdesignicons.com/">Material Design icons 2</a>
+                <a href="https://www.materialpalette.com/">Material Design palette generator</a>
+                <a href="https://www.sublimetext.com/">Sublime Text 3</a>
+                <a href="https://git-scm.com/">Git</a>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <!-- Main entries -->
+        <div class="col-sm-8 details">
+          <!-- Education -->
           <section class="container-fluid">
             <div id="education" class="row entry z-2">
               <div class="col-sm-12">
@@ -43,6 +188,7 @@
             </div>
           </section>
           
+          <!-- Things I do -->
           <section class="container-fluid">
             <div id="things-i-do" class="row entry z-2">
               <div class="col-sm-12">
@@ -116,6 +262,7 @@
             </div>
           </section>
 
+          <!-- Free time -->
           <section class="container-fluid">
             <div id="freetime" class="row entry z-2">
               <div class="col-sm-12">
@@ -125,13 +272,12 @@
 
                 <p>Sok táncos eseményre elmegyek, például a táncháztalálkozóra, néptáncantológiára, szólótáncversenyekre.</p>
 
-                <p>Szeretek a <b>barátnőmmel</b>, valamint az <b>ismerőseimmel</b> lenni.</p>
-
                 <p>Ahogy időm/kedvem van, szoktam számítógépes játékokkal játszani. (pl.: <b>Hearthstone, StarCraft II</b>)</p>
               </div>
             </div>
           </section>
 
+          <!-- Reference -->
           <section class="container-fluid">
             <div id="references" class="row entry z-2">
               <div class="col-sm-12">
@@ -144,6 +290,7 @@
             </div>
           </section>
 
+          <!-- Little footer -->
           <section class="container-fluid">
             <div id="footer" class="row entry z-2">
               <div class="col-sm-12">
@@ -153,149 +300,10 @@
           </section>
         </div>
 
-        <div class="col-sm-4 general-info">
-          <!--face-->
-          <section id="contact" class="container-fluid">
-            <div class="row z-2">
-              <div class="col-sm-12">
-                <img src="res/jordan.jpg" alt="Jordán" class="cv-img img-responsive" />
-                <span class="img-support-text">Szalontai Jordán</span>
-                <span class="img-subtitle">Debreceni Egyetem</span>
-              </div>
-              
-              <div class="col-sm-12">
-                <span class="icon"><i class="material-icons">account_circle</i></span>
-                <span class="bio">Úgy gondolom, van helyem a szakmában, mivel kellő programozói és webfejlesztési ismerettel rendelkezem.</span>
-                <span class="info-divider"></span>
-              </div>
-
-              <div class="col-sm-12">
-                <span class="icon"><i class="material-icons">phone</i></span>
-                <span class="big">(30) 338 1166</span>
-                <span class="big-sub">Mobil</span>
-                <span class="info-divider"></span>
-              </div>
-              
-              <div class="col-sm-12">
-                <span class="icon"><i class="material-icons">mail</i></span>
-                <span class="big">jordanlt1111@gmail.com</span>
-                <span class="big-sub">Személyes</span>
-                <span class="info-divider"></span>
-              </div>
-              
-              <div class="col-sm-12">
-                <span class="icon"><i class="material-icons">home</i></span>
-                <span class="big">4400 Nyíregyháza, Petőfi u. 4.</span>
-                <span class="big-sub">Állandó lakcím</span>
-              </div>
-            </div>   
-          </section> 
-
-          <section id="web" class="container-fluid skills">
-            <div class="row z-2">
-              <div class="card-header col-sm-12">
-                <h1>Web</h1>
-                <p>Miben vagyok jó?</p>
-                <span class="three-dots"></span>
-              </div>
-              <div class="card-content col-sm-12">
-                <div class="skill-web">
-                    <ul>
-                      <li class="skill s85">
-                        <img src="res/language-html5.png" />
-                        <span>HTML</span>
-                        <span class="circle"></span>
-                      </li>
-                      <li class="skill s80">
-                        <img src="res/language-css3.png" />
-                        <span>CSS</span>
-                        <span class="circle"></span>
-                      </li>
-                      <li class="skill s80">
-                        <img src="res/language-css3.png" />
-                        <span>SASS</span>
-                        <span class="circle"></span>
-                      </li>
-                      <li class="skill s75">
-                        <img src="res/language-javascript.png" />
-                        <span>JavaScript</span>
-                        <span class="circle"></span>
-                      </li>
-                      <li class="skill s65">
-                        <img src="res/language-javascript.png" />
-                        <span>JQuery</span>
-                        <span class="circle"></span>
-                      </li>
-                    </ul>
-                </div>
-              </div>
-            </div>
-          </section>
-          <section id="other" class="container-fluid skills">
-            <div class="row z-2">
-              <div class="card-header col-sm-12">
-                <h1>Egyéb</h1>
-                <p>Miben vagyok jó?</p>
-                <span class="three-dots"></span>
-              </div>
-              <div class="card-content col-sm-12">
-                <div class="skill-other">
-                    <ul>
-                      <li class="skill s85">
-                        <img src="res/keyboard.png" />
-                        <span>10 ujjas gépírás</span>
-                        <span class="circle"></span>
-                      </li>
-                      <li class="skill s75">
-                        <img src="res/coffee.png" />
-                        <span>Java</span>
-                        <span class="circle"></span>
-                      </li>
-                      <li class="skill s75">
-                        <img src="res/windows.png" />
-                        <span>MS Office</span>
-                        <span class="circle"></span>
-                      </li>
-                      <li class="skill s70">
-                        <img src="res/github-circle.png" />
-                        <span>Git</span>
-                        <span class="circle"></span>
-                      </li>
-                      <li class="skill s65">
-                        <img src="res/flag.png" />
-                        <span>Angol nyelvtudás</span>
-                        <span class="circle"></span>
-                      </li>
-                    </ul>
-                </div>
-              </div>
-            </div>
-          </section>
-          <section id="idea" class="container-fluid">
-            <div class="row z-2">
-              <div class="col-sm-12">
-                <p>Ötlet:</p>
-                <a href="http://demo.deviserweb.com/cv/index.html">Material CV template</a>
-
-                <p>Megvalósítás:</p>
-                <a href="http://getbootstrap.com/">Bootstrap</a>
-                <a href="http://sass-lang.com/">Sass</a>
-                <a href="http://scout-app.io/classic/">ScoutApp : the Sass/Compass GUI</a>
-                <a href="https://www.materialpalette.com/icons">Material Design icons 1</a>
-                <a href="https://materialdesignicons.com/">Material Design icons 2</a>
-                <a href="https://www.materialpalette.com/">Material Design palette generator</a>
-                <a href="https://www.sublimetext.com/">Sublime Text 3</a>
-                <a href="https://git-scm.com/">Git</a>
-              </div>
-            </div>
-          </section>
-        </div>
       </div>
     </div>
-
-    <!-- JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
+    
+    <!-- JavaScript -->
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.js"></script> 
  

@@ -3,11 +3,11 @@
 	.col-sm-12 {
 		position: relative;
 		z-index: 10;
-		padding: 0;
-		min-height: 80px;
+		min-height: 100px;
 		background-color: $primary-color;
 		color: $primary-color-text;
-
+		padding: 0;
+		
 		span.img-support-text, span.img-subtitle {
 			position: absolute;
 			color: $primary-color-text;
@@ -60,10 +60,10 @@
 		.info-divider {
 			position: absolute;
 			top: 0;
-			left: 18%;
-			height: 80px;
-			width: 82%;
-			border-bottom: thin solid $secondary-text-color;
+			left: 0;
+			height: 100px;
+			width: 100%;
+			border-bottom: 1px solid $primary-color-light;
 		}
 	}
 
